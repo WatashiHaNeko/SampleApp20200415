@@ -13,6 +13,8 @@
 		3187CE3D244695A400FBF808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE3B244695A400FBF808 /* Main.storyboard */; };
 		3187CE3F244695A600FBF808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE3E244695A600FBF808 /* Assets.xcassets */; };
 		3187CE42244695A600FBF808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE40244695A600FBF808 /* LaunchScreen.storyboard */; };
+		3187CE4E2446C46B00FBF808 /* TextFieldGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187CE4D2446C46B00FBF808 /* TextFieldGroupView.swift */; };
+		3187CE502446C4EE00FBF808 /* TextFieldGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE4F2446C4EE00FBF808 /* TextFieldGroupView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3187CE3E244695A600FBF808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3187CE41244695A600FBF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3187CE43244695A600FBF808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3187CE4D2446C46B00FBF808 /* TextFieldGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGroupView.swift; sourceTree = "<group>"; };
+		3187CE4F2446C4EE00FBF808 /* TextFieldGroupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldGroupView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		3187CE34244695A400FBF808 /* SampleApp20200415 */ = {
 			isa = PBXGroup;
 			children = (
+				3187CE4B2446C42700FBF808 /* Component */,
+				3187CE4A2446C41A00FBF808 /* ViewController */,
 				3187CE35244695A400FBF808 /* AppDelegate.swift */,
 				3187CE37244695A400FBF808 /* SceneDelegate.swift */,
-				3187CE39244695A400FBF808 /* SignInViewController.swift */,
 				3187CE3B244695A400FBF808 /* Main.storyboard */,
 				3187CE3E244695A600FBF808 /* Assets.xcassets */,
 				3187CE40244695A600FBF808 /* LaunchScreen.storyboard */,
 				3187CE43244695A600FBF808 /* Info.plist */,
 			);
 			path = SampleApp20200415;
+			sourceTree = "<group>";
+		};
+		3187CE4A2446C41A00FBF808 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3187CE39244695A400FBF808 /* SignInViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3187CE4B2446C42700FBF808 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3187CE4C2446C43900FBF808 /* TextFieldGroup */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		3187CE4C2446C43900FBF808 /* TextFieldGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3187CE4D2446C46B00FBF808 /* TextFieldGroupView.swift */,
+				3187CE4F2446C4EE00FBF808 /* TextFieldGroupView.xib */,
+			);
+			name = TextFieldGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3187CE502446C4EE00FBF808 /* TextFieldGroupView.xib in Resources */,
 				3187CE42244695A600FBF808 /* LaunchScreen.storyboard in Resources */,
 				3187CE3F244695A600FBF808 /* Assets.xcassets in Resources */,
 				3187CE3D244695A400FBF808 /* Main.storyboard in Resources */,
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3187CE4E2446C46B00FBF808 /* TextFieldGroupView.swift in Sources */,
 				3187CE3A244695A400FBF808 /* SignInViewController.swift in Sources */,
 				3187CE36244695A400FBF808 /* AppDelegate.swift in Sources */,
 				3187CE38244695A400FBF808 /* SceneDelegate.swift in Sources */,
