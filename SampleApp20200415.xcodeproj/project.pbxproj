@@ -15,6 +15,7 @@
 		3187CE42244695A600FBF808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE40244695A600FBF808 /* LaunchScreen.storyboard */; };
 		3187CE4E2446C46B00FBF808 /* TextFieldGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187CE4D2446C46B00FBF808 /* TextFieldGroupView.swift */; };
 		3187CE502446C4EE00FBF808 /* TextFieldGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3187CE4F2446C4EE00FBF808 /* TextFieldGroupView.xib */; };
+		3187CE522446C9F300FBF808 /* DesignableUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187CE512446C9F300FBF808 /* DesignableUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3187CE43244695A600FBF808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3187CE4D2446C46B00FBF808 /* TextFieldGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGroupView.swift; sourceTree = "<group>"; };
 		3187CE4F2446C4EE00FBF808 /* TextFieldGroupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldGroupView.xib; sourceTree = "<group>"; };
+		3187CE512446C9F300FBF808 /* DesignableUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3187CE4C2446C43900FBF808 /* TextFieldGroup */,
+				3187CE512446C9F300FBF808 /* DesignableUIButton.swift */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				3187CE4E2446C46B00FBF808 /* TextFieldGroupView.swift in Sources */,
 				3187CE3A244695A400FBF808 /* SignInViewController.swift in Sources */,
+				3187CE522446C9F300FBF808 /* DesignableUIButton.swift in Sources */,
 				3187CE36244695A400FBF808 /* AppDelegate.swift in Sources */,
 				3187CE38244695A400FBF808 /* SceneDelegate.swift in Sources */,
 			);

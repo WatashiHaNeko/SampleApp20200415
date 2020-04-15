@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-LD-PkT" userLabel="Form Container">
-                                <rect key="frame" x="32" y="330" width="350" height="236"/>
+                                <rect key="frame" x="32" y="327" width="350" height="242"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-pg-e0F" userLabel="VStack">
-                                        <rect key="frame" x="32" y="32" width="286" height="172"/>
+                                        <rect key="frame" x="32" y="32" width="286" height="178"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jL2-q5-OhO" userLabel="Email Field Group" customClass="TextFieldGroupView" customModule="SampleApp20200415" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="55"/>
@@ -37,9 +37,19 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fieldPlaceholder" value="パスワードを入力..."/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button">
-                                                <rect key="frame" x="0.0" y="142" width="286" height="30"/>
-                                                <state key="normal" title="ログイン"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button" customClass="DesignableUIButton" customModule="SampleApp20200415" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="142" width="286" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" title="ログイン">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
