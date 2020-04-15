@@ -16,18 +16,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-LD-PkT" userLabel="Form Container">
-                                <rect key="frame" x="32" y="376" width="350" height="144"/>
+                                <rect key="frame" x="32" y="365.5" width="350" height="165"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-pg-e0F" userLabel="VStack">
-                                        <rect key="frame" x="32" y="32" width="286" height="80"/>
+                                        <rect key="frame" x="32" y="32" width="286" height="101"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-Up-CsI" userLabel="Email Field">
-                                                <rect key="frame" x="0.0" y="0.0" width="286" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
-                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jL2-q5-OhO" userLabel="Email Field Group">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="m8V-eO-FjN" userLabel="VStack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuS-3o-xVo" userLabel="Email Field Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-Up-CsI" userLabel="Email Field">
+                                                                <rect key="frame" x="0.0" y="21" width="286" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="m8V-eO-FjN" firstAttribute="trailing" secondItem="jL2-q5-OhO" secondAttribute="trailing" id="5ww-74-Vwp"/>
+                                                    <constraint firstItem="m8V-eO-FjN" firstAttribute="leading" secondItem="jL2-q5-OhO" secondAttribute="leading" id="GLG-9K-fle"/>
+                                                    <constraint firstItem="m8V-eO-FjN" firstAttribute="bottom" secondItem="jL2-q5-OhO" secondAttribute="bottom" id="eXD-fj-wrA"/>
+                                                    <constraint firstItem="m8V-eO-FjN" firstAttribute="top" secondItem="jL2-q5-OhO" secondAttribute="top" id="xuS-PM-Wdn"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button">
-                                                <rect key="frame" x="0.0" y="50" width="286" height="30"/>
+                                                <rect key="frame" x="0.0" y="71" width="286" height="30"/>
                                                 <state key="normal" title="ログイン"/>
                                             </button>
                                         </subviews>
