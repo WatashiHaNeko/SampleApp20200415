@@ -15,18 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-LD-PkT" userLabel="Form Container">
-                                <rect key="frame" x="32" y="365.5" width="350" height="165"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-LD-PkT" userLabel="Form Container">
+                                <rect key="frame" x="32" y="330" width="350" height="236"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-pg-e0F" userLabel="VStack">
-                                        <rect key="frame" x="32" y="32" width="286" height="101"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-pg-e0F" userLabel="VStack">
+                                        <rect key="frame" x="32" y="32" width="286" height="172"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jL2-q5-OhO" userLabel="Email Field Group" customClass="TextFieldGroupView" customModule="SampleApp20200415" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jL2-q5-OhO" userLabel="Email Field Group" customClass="TextFieldGroupView" customModule="SampleApp20200415" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="55"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fieldLabelText" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fieldPlaceholder" value="email@example.com"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button">
-                                                <rect key="frame" x="0.0" y="71" width="286" height="30"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pud-Si-IvZ" userLabel="Password Field Group" customClass="TextFieldGroupView" customModule="SampleApp20200415" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="71" width="286" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fieldLabelText" value="Password"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fieldPlaceholder" value="パスワードを入力..."/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button">
+                                                <rect key="frame" x="0.0" y="142" width="286" height="30"/>
                                                 <state key="normal" title="ログイン"/>
                                             </button>
                                         </subviews>

@@ -2,6 +2,21 @@ import UIKit
 
 @IBDesignable
 class TextFieldGroupView: UIView {
+    @IBOutlet weak var fieldLabel: UILabel!
+    @IBOutlet weak var field: UITextField!
+
+    @IBInspectable var fieldLabelText: String = "" {
+        didSet {
+            fieldLabel.text = fieldLabelText
+        }
+    }
+
+    @IBInspectable var fieldPlaceholder: String = "" {
+        didSet {
+            field.placeholder = fieldPlaceholder
+        }
+    }
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
