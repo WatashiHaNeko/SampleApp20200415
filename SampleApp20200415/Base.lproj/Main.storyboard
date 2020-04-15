@@ -14,7 +14,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-LD-PkT" userLabel="Form Container">
+                                <rect key="frame" x="32" y="376" width="350" height="144"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-pg-e0F" userLabel="VStack">
+                                        <rect key="frame" x="32" y="32" width="286" height="80"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-Up-CsI" userLabel="Email Field">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-Zs-VLR" userLabel="Submit Button">
+                                                <rect key="frame" x="0.0" y="50" width="286" height="30"/>
+                                                <state key="normal" title="ログイン"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="M4Q-pg-e0F" firstAttribute="trailing" secondItem="q4x-LD-PkT" secondAttribute="trailing" constant="-32" id="7qa-dr-JxQ"/>
+                                    <constraint firstItem="M4Q-pg-e0F" firstAttribute="bottom" secondItem="q4x-LD-PkT" secondAttribute="bottom" constant="-32" id="B9D-ne-Nkz"/>
+                                    <constraint firstItem="M4Q-pg-e0F" firstAttribute="leading" secondItem="q4x-LD-PkT" secondAttribute="leading" constant="32" id="IQW-La-fyp"/>
+                                    <constraint firstItem="M4Q-pg-e0F" firstAttribute="top" secondItem="q4x-LD-PkT" secondAttribute="top" constant="32" id="TXD-4I-VL2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q4x-LD-PkT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-32" id="Z37-OV-tvj"/>
+                            <constraint firstItem="q4x-LD-PkT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-27" id="nA7-3o-dm4"/>
+                            <constraint firstItem="q4x-LD-PkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="rAb-3G-9hz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="ログイン画面" id="X4k-lC-NlE"/>
